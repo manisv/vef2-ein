@@ -1,74 +1,35 @@
-<<<<<<< HEAD
-# Getting Started with Create React App
+# Skýrsla: Ghibli Vefsíða með React og Node
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Inngangur
+Hugmyndin að þessari vefsíðu kom frá áhuga á Studio Ghibli myndunum og viljanum til að búa til vefsíðu sem sýnir upplýsingar um myndir, persónur, staði og ökutæki sem koma fyrir í þeim. Markmiðið var að nota React og Node til að búa til vefsíðu sem er notendavæn og skýr, og sem gerir notendum kleift að skoða og upplifa heima Studio Ghibli á skemmtilegan hátt.
 
-## Available Scripts
+## Útfærsla
+Vefsíðan uppfyllir eftirfarandi skilyrði:
 
-In the project directory, you can run:
+1. **Sýna myndir**: Notendur geta skoðað lista yfir allar Studio Ghibli myndirnar ásamt upplýsingum um hverja mynd.
+2. **Sýna persónur**: Notendur geta skoðað lista yfir persónur í myndunum ásamt upplýsingum um hverja persónu.
+3. **Sýna staði**: Notendur geta skoðað lista yfir staði sem koma fyrir í myndunum.
+4. **Sýna ökutæki**: Notendur geta skoðað lista yfir ökutæki sem koma fyrir í myndunum.
 
-### `npm start`
+## Tækni
+Tæknin sem notuð var í þessu verkefni er eftirfarandi:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **React**: Notað fyrir framenda til að búa til notendavænt og skýrt viðmót. React er valið vegna þess hversu auðvelt er að búa til endurnýtanlegar komponentur og stjórna stöðu forritsins.
+- **Node.js**: Notað fyrir bakenda til að sækja gögn úr API og vinna úr þeim. Node.js er valið vegna þess hversu auðvelt er að setja upp og keyra þjónustur með því.
+- **Axios**: Notað til að senda HTTP beiðnir til API og sækja gögnin.
+- **CSS**: Notað til að stíla vefsíðuna og gera hana aðlaðandi og notendavæna.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Hvað gekk vel
+- **Notendaviðmót**: Viðmótið varð mjög notendavænt og auðvelt í notkun. React komponenturnar voru endurnýtanlegar og auðveldlega hægt að stjórna stöðu forritsins.
+- **Gögn**: Gögnin voru sótt úr API og vistuð á skilvirkan hátt. Axios gerði það auðvelt að sækja gögn og vinna úr þeim.
+- **Stíll**: CSS var notað á skilvirkan hátt til að gera vefsíðuna aðlaðandi og notendavæna.
 
-### `npm test`
+## Hvað gekk illa
+- **API takmarkanir**: API-ið hafði takmarkanir á hversu oft hægt var að sækja gögn, sem olli stundum hægagangi á vefsíðunni.
+- **Stillingar**: Það tók tíma að setja upp Node.js og React og tryggja að allt væri keyrandi á réttan hátt.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Hvað var áhugavert
+- **Studio Ghibli heimurinn**: Það var áhugavert að kanna gögnin og sjá hversu mikið af upplýsingum var tiltækt um myndir, persónur, staði og ökutæki.
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-=======
-# vef2-ein
->>>>>>> ac6526d3a7d1ed7cec0efe24498eec1cf586df18
+## Niðurstaða
+Vefsíðan varð vel útfærð og uppfyllti öll skilyrði sem sett voru fram. Notendur geta skoðað upplýsingar um Studio Ghibli myndir, persónur, staði og ökutæki á skemmtilegan og notendavænan hátt. Það voru nokkrar áskoranir en þær voru leystar með góðum árangri. Þetta verkefni var góð æfing í að vinna með React og Node og sýndi hversu öflug þessi tækni getur verið þegar hún er notuð rétt.
