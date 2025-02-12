@@ -3,7 +3,7 @@ const cors = require('cors');
 const app = express();
 const port = 5000;
 
-app.use(cors());
+app.use(cors({ origin: 'https://spectacular-cendol-3cb9b3.netlify.app/' }));
 
 const ghibliData = require('./ghibli-data.json');
 

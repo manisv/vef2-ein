@@ -6,8 +6,10 @@ const App = () => {
   const [selectedFilm, setSelectedFilm] = useState(null);
   const [error, setError] = useState(null);
 
+  const apiUrl = 'https://ghibliapi.vercel.app';
+
   useEffect(() => {
-    axios.get('http://localhost:5000/api/films')
+    axios.get(`${apiUrl}/films`)
       .then(response => {
         console.log('Films fetched:', response.data);
         setFilms(response.data);
@@ -19,7 +21,7 @@ const App = () => {
   }, []);
 
   const handleFilmClick = (filmId) => {
-    axios.get(`http://localhost:5000/api/films/${filmId}`)
+    axios.get(`${apiUrl}/films/${filmId}`)
       .then(response => {
         console.log('Film details fetched:', response.data);
         setSelectedFilm(response.data);
@@ -69,34 +71,45 @@ const App = () => {
 
           <h3>Characters</h3>
           <ul>
-            {selectedFilm.characters.map(character => (
-              <li key={character.id}>{character.name}</li>
+            {selectedFilm.people.map(characterUrl => (
+              <li key={characterUrl}>
+                <a href={characterUrl} target="_blank" rel="noopener noreferrer">
+                  View Character
+                </a>
+              </li>
             ))}
           </ul>
 
           <h3>Locations</h3>
           <ul>
-            {selectedFilm.locations.map(location => (
-              <li key={location.id}>
-                <strong>{location.name}</strong>
-                <p>Climate: {location.climate}</p>
-                <p>Terrain: {location.terrain}</p>
-                <p>Surface Water: {location.surface_water}%</p>
+            {selectedFilm.locations.map(locationUrl => (
+              <li key={locationUrl}>
+                <a href={locationUrl} target="_blank" rel="noopener noreferrer">
+                  View Location
+                </a>
               </li>
             ))}
           </ul>
 
           <h3>Species</h3>
           <ul>
-            {selectedFilm.species.map(species => (
-              <li key={species.id}>{species.name}</li>
+            {selectedFilm.species.map(speciesUrl => (
+              <li key={speciesUrl}>
+                <a href={speciesUrl} target="_blank" rel="noopener noreferrer">
+                  View Species
+                </a>
+              </li>
             ))}
           </ul>
 
           <h3>Vehicles</h3>
           <ul>
-            {selectedFilm.vehicles.map(vehicle => (
-              <li key={vehicle.id}>{vehicle.name}</li>
+            {selectedFilm.vehicles.map(vehicleUrl => (
+              <li key={vehicleUrl}>
+                <a href={vehicleUrl} target="_blank" rel="noopener noreferrer">
+                  View Vehicle
+                </a>
+              </li>
             ))}
           </ul>
         </div>
