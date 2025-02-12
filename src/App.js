@@ -7,7 +7,6 @@ const App = () => {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    // Fetch all films from the backend
     axios.get('http://localhost:5000/api/films')
       .then(response => {
         console.log('Films fetched:', response.data);
@@ -20,7 +19,6 @@ const App = () => {
   }, []);
 
   const handleFilmClick = (filmId) => {
-    // Fetch details of the selected film
     axios.get(`http://localhost:5000/api/films/${filmId}`)
       .then(response => {
         console.log('Film details fetched:', response.data);
@@ -33,7 +31,7 @@ const App = () => {
   };
 
   const handleBackClick = () => {
-    setSelectedFilm(null); // Reset selected film
+    setSelectedFilm(null);
   };
 
   if (error) {
